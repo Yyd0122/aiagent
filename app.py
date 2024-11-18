@@ -38,11 +38,6 @@ with col2:
 
       st.image('시각화2 (1).png' )   # 이미지 불러오기
 
-with col3:
-
-      st.subheader('데이터시각화3')
-
-      st.image('시각화3.png')   # 이미지 불러오기
 
 # 4.모델 활용
 
