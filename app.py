@@ -8,7 +8,7 @@ import joblib
 model = joblib.load('linear_regression_model.pkl')
 
 # 2. 모델 설명
- st.title('점수 예측 에이전트')
+ st.title('작물수확량 예측 에이전트')
 
 st.subheader('모델 설명')
 
@@ -48,17 +48,17 @@ with col3:
 
 st.subheader('모델 활용')
 
-st.write('**** 다음을 입력하세요.. 인공지능이 당신의 점수를 알려드립니다! ')
+st.write('**** 다음을 입력하세요.. 인공지능이 작물수확량을 알려드립니다! ')
 
-a = st.number_input(' 수강과목수 입력 ', value=0)      #초기값은 0
+a = st.number_input(' 살충제사용량 입력 ', value=0)      #초기값은 0
 
-b = st.number_input(' 공부시간 입력 ', value=0.0 )     # 초기값은 0.0
+b = st.number_input(' 비료사용량 입력 ', value=0.0 )     # 초기값은 0.0
 
 c = st.selectbox('공지확인 입력(확인한다:0, 확인하지않는다:1', [0,1])
 
                                                             # 사용자가  0,1 중에 선택
 
-if st.button('점수예측'):            # 사용자가 '점수예측' 버튼을 누르면
+if st.button('작물수확량 예측'):            # 사용자가 '작물수확량 예측' 버튼을 누르면
 
         input_data = [[a,b,c]]     # 사용자가 입력한 a,b,c 를 input_data에 저장하고
 
