@@ -59,11 +59,11 @@ b = st.number_input(' 비료사용량 입력 ', value=0)     # 초기값은 0
 
 if st.button('작물수확량 예측'):            # 사용자가 '작물수확량 예측' 버튼을 누르면
 
-        input_data = [[a,b,c]]     # 사용자가 입력한 a,b,c 를 input_data에 저장하고
+        input_data = [[a,b]]     # 사용자가 입력한 a,b 를 input_data에 저장하고
 
         p = model.predict(input_data)         # model이 예측한 값을 p에 저장한다
 
-        st.write('인공지능의 예측 점수는', p)
+        st.write('인공지능의 예측 작물수확량은', p)
 
 
 
