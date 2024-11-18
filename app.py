@@ -8,7 +8,7 @@ import joblib
 model = joblib.load('linear_regression_model.pkl')
 
 # 2. 모델 설명
- st.title('작물수확량 예측 에이전트')
+st.title('작물수확량 예측 에이전트')
 
 st.subheader('모델 설명')
 
