@@ -30,13 +30,13 @@ with col1:
 
       st.subheader('데이터시각화1')
 
-      st.image('시각화1.png' )   # 이미지 불러오기
+      st.image('시각화1 (1).png' )   # 이미지 불러오기
 
 with col2:
 
       st.subheader('데이터시각화2')
 
-      st.image('시각화2.png' )   # 이미지 불러오기
+      st.image('시각화2 (1).png' )   # 이미지 불러오기
 
 with col3:
 
